@@ -9,16 +9,16 @@ namespace Lab2
     internal class Employee
     {
         //attributes
-        public string id;
-        public string name;
-        public string address;
+        public string Id;
+        public string Name;
+        public string Address;
 
         //constructor
         public Employee(string id, string name, string address)
         {
-            this.id = id;
-            this.name = name;
-            this.address = address;
+            Id = id;
+            Name = name;
+            Address = address;
         }
 
 

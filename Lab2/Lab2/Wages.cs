@@ -15,6 +15,8 @@ namespace Lab2
         //attributes
         private double rate;
         private double hours;
+        private const double regularHours = 40;
+        private const double overtimeRate = 1.5;
 
         //constructor
         public Wages(string id, string name, string address, string phone, long sin, string DOB, string department, double rate, double hours)
@@ -23,17 +25,25 @@ namespace Lab2
             this.hours = hours;
         }
 
+        //getters
         public double GetRate()
         { return rate; }
         public double GetHours() 
         { return hours; }
+
+        //setters
+        public void SetRate(double rate)
+        { this.rate = rate; }
+        public void SetHours(double hours)
+        { this.hours = hours; }
+
         //pay method with overtime hours
         public double GetPay()
         {
-            if (hours <= 40)
+            if (hours <= regularHours)
                 { return hours * rate; }
             else
-                { return (40 * rate) + ((hours - 40) * rate * 1.5); }
+                { return (regularHours * rate) + ((hours - regularHours) * rate * overtimeRate); }
         }
 
         //print employee summary

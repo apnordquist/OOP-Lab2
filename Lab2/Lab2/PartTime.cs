@@ -22,10 +22,18 @@ namespace Lab2
             this.hours = hours;
         }
 
+        //getters
         public double GetRate()
         { return rate; }
         public double GetHours()
         { return hours; }
+
+        //setters
+        public void SetRate(double rate)
+        { this.rate = rate; }
+        public void SetHours(double hours) 
+        { this.hours = hours;}
+
         //pay method
         public double GetPay()
         {

@@ -37,6 +37,7 @@ namespace Lab2
             this.department = department;
         }
 
+        //getters
         public string GetId()
         { return id; }
         public string GetName() 
@@ -48,9 +49,25 @@ namespace Lab2
         public long GetSIN() 
         { return sin; }
         public string GetDOB() 
-        {  return DOB; }
+        { return DOB; }
         public string GetDepartment() 
         {  return department; }
+
+        //setters
+        public void SetId(string id)
+        { this.id = id; }
+        public void SetName(string name)
+        { this.name = name; }
+        public void SetAddress(string address)
+        { this.address = address; }
+        public void SetPhone(string phone)
+        { this.phone = phone; }
+        public void SetSIN(long sin)
+        { this.sin = sin; }
+        public void SetDOB(string DOB)
+        { this.DOB = DOB; }
+        public void SetDepartment(string department)
+        { this.department = department; }
 
         //print employee summary
         public string toString()
